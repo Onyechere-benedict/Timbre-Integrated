@@ -1,0 +1,395 @@
+/* INTRO SECTION *********************** */
+
+section.intro{
+	height: 122vh;
+	min-height: 600px;
+	/* background-image: url('../images/hero_home_01.jpg'); */
+    background-image: url('/image/hero_home_01.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+}
+
+/* TEXT STYLES ************************** */
+section.intro header{
+	position: absolute;
+	bottom: 35%;
+	right: 6%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	color: #fff;
+	margin-top: 55px;
+	width: 100%;
+	z-index: 8;
+}
+section.intro .heading{
+	font-size: 6.25rem;
+	font-weight: 900;
+	letter-spacing: -2px;
+	line-height: 6.85rem;
+	color: inherit;
+	margin-bottom: 0;
+}
+section.intro .heading:nth-of-type(1){
+	margin-right: 200px;
+}
+section.intro .heading:nth-of-type(2){
+	margin-right: 50px;
+}
+section.intro .subheading{
+	font-weight: 500;
+	font-size: 1.6rem;
+	margin-top: 10px;
+    margin-right: 50%;
+}
+
+/* FLOATING IMAGES STYLES ************************ */
+
+section.intro .floating-imgs div:nth-child(1){
+	top: -11rem;
+	left: 15rem;
+	z-index: 9;
+}
+section.intro .floating-imgs div:nth-child(2){
+	top: 13rem;
+	left: 0;
+	z-index: 7;
+}
+section.intro .floating-imgs div:nth-child(3){
+	top: 18rem;
+	right: 0;
+	z-index: 7;
+}
+section.intro .floating-imgs div:nth-child(4){
+	bottom: -8rem;
+	left: -7rem;
+	z-index: 6;
+}
+
+
+/* CALL TO ACTION STYLES ***************************** */
+
+section.call-to-action .floating-imgs div{
+	z-index: 5;
+}
+
+section.call-to-action .floating-imgs div:nth-child(1){
+	top: 0;
+}
+section.call-to-action .floating-imgs div:nth-child(2){
+	top: -2em;
+	left: 31em;
+}
+section.call-to-action .floating-imgs div:nth-child(3){
+	top: -24em;
+	left: -21em;
+}
+
+
+/* CALL TO ACTION 2 ********************************** */
+
+section.call-to-action-right .floating-imgs div:nth-of-type(1){
+	right: 24em;
+	top: -15em;
+	left: unset;
+	bottom: unset;
+}
+section.call-to-action-right .floating-imgs div:nth-of-type(2){
+	right: 6em;
+	top: 50%;
+	left: unset;
+	bottom: unset;
+	transform: translateY(-50%);
+}
+section.call-to-action-right .floating-imgs div:nth-of-type(3){
+	bottom: -3em;
+	right: 15em;
+	top: unset;
+	left: unset;
+}
+
+
+
+/* BLOG STYLES ***************************** */
+
+section.blog{
+	background-image: url('/image/background_dots_02.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	padding-bottom: 150px;
+}
+section.blog header{
+	width: 100% !important;
+}
+section.blog .blogs{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	margin: 80px 0 50px;
+}
+section.blog .blog-card,
+section.blog .blog-card-alt{
+	width: calc((100% - 4rem) / 3);
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+section.blog .blog-card-alt img{
+	object-fit: cover;
+	width: auto !important;
+	height: 100% !important;
+}
+section.blog .blog-card{
+	border: 1px solid #ededed;
+}
+section.blog .blog-card .text-container,
+section.blog .blog-card-alt .text-container{
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+section.blog .blog-card .text-container{
+	background-color: #fff;
+}
+section.blog .blog-card .date,
+section.blog .blog-card-alt .date{
+	color: #222;
+	font-size: 0.9rem;
+}
+section.blog .blog-card .title,
+section.blog .blog-card-alt .title{
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin: 10px 0;
+	line-height: 1.5;
+	color: #222;
+}
+section.blog .blog-card p{
+	color: #4a4a4a;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+section.blog .blog-card-alt .img-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+section.blog .blog-card-alt .img-container a::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.2));
+}
+section.blog .blog-card-alt .text-container{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+section.blog .blog-card-alt .text-container > *{
+	color: #fff;
+}
+section.blog .button{
+	position: relative;
+	z-index: 10;
+}
+
+
+/* TEAM MEMBERS **************************** */
+
+section.team{
+	background-image: url('/image/background_dots_03.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	padding-bottom: 200px;
+}
+section.team .inner{
+	position: relative;
+	z-index: 10;
+}
+section.team header{
+	width: 100% !important;
+}
+section.team .team-members{
+	display: flex;
+	gap: 40px;
+	margin-top: 70px;
+}
+section.team .team-member-card{
+	width: calc((100% - 80px) / 3);
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+section.team .team-member-card .text-container{
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+section.team .team-member-card .position{
+	font-size: 0.9rem;
+}
+section.team .team-member-card .name{
+	font-size: 2.1rem;
+	font-weight: 700;
+	margin-top: 5px;
+	line-height: 1.5;
+}
+section.team .team-member-card .img-container a::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,.4));
+}
+section.team .team-member-card .text-container{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+section.team .team-member-card .text-container *{
+	color: #fff;
+}
+section.team .team-member-card hr{
+	border: none;
+	border-top: 1px solid;
+	margin: 10px 0 15px;
+}
+section.team .team-member-card .contact{
+	font-size: 0.85rem;
+}
+section.team .team-member-card .contact .email{
+	margin-left: 5px;
+}
+section.team .team-member-card .bottom{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+section.team .team-member-card .socials i{
+	border: 1px solid;
+	border-radius: 50%;
+	padding: 6px;
+	font-size: 1.05rem;
+}
+
+
+/* MEDIA QUERIES ******************************* */
+
+@media screen and (max-width: 992px) {
+
+	/* INTRO SECTION ****************** */
+
+	section.intro{
+		height: 110vh;
+	}
+
+	section.intro header{
+		right: unset;
+		bottom: 20%;
+		padding-left: 30px;
+		align-items: flex-start;
+	}
+	section.intro .heading{
+		font-size: 4rem;
+		line-height: 4.5rem;
+	}
+	section.intro .heading:nth-of-type(1){
+		margin-right: 0;
+	}
+	section.intro .heading:nth-of-type(2){
+		margin-right: 0;
+	}
+
+
+	/* BLOG STYLES ***************************** */
+
+	section.blog{
+		padding-top: 80px;
+	}
+	section.blog .blog-card,
+	section.blog .blog-card-alt{
+		width: calc((100% - 2rem) / 2);
+	}
+
+	/* TEAM MEMBERS **************************** */
+
+	section.team{
+		margin-top: 50px;
+	}	
+	section.team .team-members{
+		flex-direction: column;
+	}
+	section.team .team-member-card{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	/* HEADER STYLES ******************* */
+
+	header .heading{
+		font-size: 2.15rem !important;
+	}
+	header .subheading{
+		font-size: 1.0725rem !important;
+	}
+
+	/* INTRO SECTION ****************** */
+	
+	section.intro{
+		height: 105vh;
+	}
+
+	section.intro .heading{
+		font-size: 4rem !important;
+		line-height: 1.2;
+	}
+
+	/* BLOG STYLES ***************************** */
+
+	section.blog .blog-card,
+	section.blog .blog-card-alt{
+		width: 100%;
+	}
+	section.blog .blog-card-alt{
+		padding-bottom: 150%;
+	}	
+
+	/* TEAM MEMBERS **************************** */
+	
+	section.team .team-member-card .position{
+		font-size: 0.7rem;
+	}
+	section.team .team-member-card .name{
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	/* INTRO SECTION ****************** */
+	
+	section.intro .heading{
+		font-size: 2.8rem !important;
+		line-height: 1.2;
+	}
+}
