@@ -125,7 +125,7 @@ footer .inner{
 	font-weight: 700;
 }
 .button-main{
-	background-color: var(--accent1);
+	background-color:orange;
 	color: #fff;
 	border: 1px solid var(--accent1);
 }
@@ -248,6 +248,7 @@ section.call-to-action{
 	background-color: #000;
 	height: 200vh;
 	position: relative;
+	background-attachment: fixed;
 }
 section.call-to-action .inner{
 	height: 100%;
@@ -293,6 +294,7 @@ section.call-to-action .button-lg{
 
 section.call-to-action-right{
 	background-image: url('/image/Vision.jpg');
+	background-attachment: fixed;
 }
 section.call-to-action-right .inner{
 	align-items: flex-end;
