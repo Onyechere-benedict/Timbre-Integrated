@@ -2,7 +2,7 @@
 /* SETUP FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
-
+/* 
 @font-face {
   font-family: 'Spartan';
   font-style: normal;
@@ -58,7 +58,7 @@
   font-display: swap;
   src: url('spartan-cufonfonts/Spartan-Black.ttf') format('truetype');
   unicode-range: U+0000-00FF;
-}
+} */
 
 
 /* GENERAL STYLES */
@@ -181,6 +181,8 @@ header .subheading{
 }
 
 
+
+
 /* TOP AND BOTTOM WAVE IMAGES */
 
 .bottom-img{
@@ -241,7 +243,7 @@ section.bg-gradient::before{
 
 section.call-to-action{
 	/* background-image: url('../image/background_01.jpg'); */
-    background-image: url('/image/Mission.jpg');
+    background-image: url('/images/Mission.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -293,7 +295,7 @@ section.call-to-action .button-lg{
 /* CALL TO ACTION 2 ********************************** */
 
 section.call-to-action-right{
-	background-image: url('/image/Vision.jpg');
+	background-image: url('/images/Vision.jpg');
 	background-attachment: fixed;
 }
 section.call-to-action-right .inner{
@@ -308,7 +310,7 @@ section.call-to-action-right .text{
 
 section.services{
 	background-color: #f7f7f5;
-	background-image: url('/image/background_dots_01.png');
+	background-image: url('/images/background_dots_01.png');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -329,6 +331,16 @@ section.services .col1{
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
+	opacity: 0;
+	transition: all 1s;
+	transform: translateX(-100px);
+	filter: blur(5px);
+}
+
+section.services .col1.observed{
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0)
 }
 section.services .heading{
 	margin-top: 120px;
@@ -355,10 +367,29 @@ section.services .col2{
 	/* gap: 40px; */
 	justify-content: space-between;
 	padding: 0 20px;
+	
 }
+
+
 section.services .col2 .col{
 	width: calc((100% - 20px) / 2);
+	opacity: 0;
+	transition: all 1.5s;
+	transform: translateY(100px);
+	filter: blur(5px);
 }
+
+section.services .col2 .col.observed{
+	opacity: 1;
+	filter: blur(0);
+	transform: translateY(0)
+}
+
+section.services .col2 .col:nth-child(1){
+	transition-delay: 400ms;
+}
+
+
 section.services .col2 .col:first-of-type{
 	padding-top: 50px;
 }
@@ -387,6 +418,17 @@ section.services .bottom-img{
 
 /* RECRUITMENT PROCESS STYLES ************************ */
 
+section.recruitment-process .inner.centered header {
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 1s;
+}
+
+section.recruitment-process .inner.centered header.observed{
+		opacity: 1;
+		transform: translateY(0);
+}
+
 section.recruitment-process{
 	padding-bottom: 60px;
 	position: relative;
@@ -397,10 +439,42 @@ section.recruitment-process .process{
 	gap: 10px;
 	margin: 70px 0;
 	width: 100%;
+	/* filter: blur(5);
+	transform: translateX(-1000px);
+	transition: all 1.05s ; */
 }
+
+/* section.recruitment-process .process.observed{
+	filter: blur(0);
+	transform: translateX(0);
+} */
+
+
 section.recruitment-process .process-card{
 	width: calc((100% - 30px) / 4);
+	filter: blur(5);
+	transform: translateX(-1000px);
+	transition: all 1.05s ;
 }
+
+section.recruitment-process .process-card.observed{
+	filter: blur(0);
+	transform: translateX(0);
+}
+
+
+section.recruitment-process .process-card:nth-child(2).observed{
+	transition-delay: 400ms;
+}
+
+section.recruitment-process .process-card:nth-child(3).observed{
+	transition-delay: 600ms;
+}
+
+section.recruitment-process .process-card:nth-child(4).observed {
+	transition-delay: 800ms;
+}
+
 section.recruitment-process .process-card .img-container{	
 	position: relative;
 }
@@ -1164,13 +1238,15 @@ section.search-bar .close-btn:hover .icon{
 
 
 	/* RECRUITMENT PROCESS STYLES ************************ */
-
+	
+	
 	section.recruitment-process .process{
 		gap: 50px 20px;
 	}
 	section.recruitment-process .process-card{
 		width: calc((100% - 40px) / 2);
 	}
+
 
 
 	/* FOOTER STYLES ******************* */

@@ -4,7 +4,7 @@ section.intro{
 	height: 122vh;
 	min-height: 600px;
 	/* background-image: url('../images/hero_home_01.jpg'); */
-    background-image: url('/image/hero_home_01.jpg');
+    background-image: url('/images/hero_home_01.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -117,7 +117,7 @@ section.call-to-action-right .floating-imgs div:nth-of-type(3){
 /* BLOG STYLES ***************************** */
 
 section.blog{
-	background-image: url('/image/background_dots_02.png');
+	background-image: url('/images/background_dots_02.png');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -210,7 +210,7 @@ section.blog .button{
 /* TEAM MEMBERS **************************** */
 
 section.team{
-	background-image: url('/image/background_dots_03.png');
+	background-image: url('/images/background_dots_03.png');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
