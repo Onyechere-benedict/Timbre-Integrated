@@ -98,20 +98,20 @@ $(function () {
 // observeServiceElements.forEach((el) => observer.observe(el));
 
 const observeElements = (selectors, threshold = 0, rootMargin = "0px 0px 0px 0px") => {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                entry.target?.classList.toggle("observed", entry.isIntersecting);
+            });
+        },
+        { threshold, rootMargin }
+    );
     selectors.forEach((selector) => {
         const elements = document.querySelectorAll(selector);
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    entry.target?.classList.toggle("observed", entry.isIntersecting);
-                });
-            },
-            { threshold, rootMargin }
-        );
-        // elements.forEach((element) => observer.observe(element));
-        document.querySelectorAll(selector).forEach(observer.observe.bind(observer));
+        elements.forEach((element) => observer.observe(element));
+        // document.querySelectorAll(selector).forEach(observer.observe.bind(observer));
     });
 };
 
 observeElements([".col1", ".col2 .col", ".inner header"]);
-observeElements([".process-card"], 0, "0px 1500px 200px 0px");
+observeElements([".process-card"], 0, "0px 0px 200px 3000px");

@@ -453,7 +453,7 @@ section.recruitment-process .process{
 section.recruitment-process .process-card{
 	width: calc((100% - 30px) / 4);
 	filter: blur(5);
-	transform: translateX(-1000px);
+	transform: translateX(-2000px);
 	transition: all 1.05s ;
 }
 
