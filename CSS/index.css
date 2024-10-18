@@ -264,6 +264,12 @@ section.call-to-action .inner .text{
 	color: #fff;
 	z-index: 8;
 	text-shadow: 0 0 2px rgba(0,0,0,.2);
+	transform: translateX(-1000px);
+	transition: all 1s;
+}
+
+section.call-to-action .inner .text.observed {
+	transform: translateX(0)
 }
 section.call-to-action .heading{
 	color: #fff;
@@ -1210,8 +1216,10 @@ section.search-bar .close-btn:hover .icon{
 
 	section.call-to-action .inner .text{
 		width: 100%;
+		
 	}
 
+	
 
 	/* SERVICES SECTION *************** */
 
