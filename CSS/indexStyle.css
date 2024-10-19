@@ -139,6 +139,15 @@ section.blog .blog-card-alt{
 	border-radius: 10px;
 	overflow: hidden;
 	position: relative;
+	filter: blur(5);
+	transform: translateX(-1000px);
+	transition: all 1s;
+}
+
+section.blog .blog-card.observed,
+section.blog .blog-card-alt.observed{
+	filter: blur(0);
+	transform: translateX(0);
 }
 section.blog .blog-card-alt img{
 	object-fit: cover;
@@ -234,7 +243,22 @@ section.team .team-member-card{
 	border-radius: 10px;
 	overflow: hidden;
 	position: relative;
+	transform: translateX(-1500px);
+	transition: all 1s;
 }
+
+section.team .team-member-card.observed{
+	transform: translateX(0);
+}
+
+section.team .team-member-card:nth-child(2).observed{
+	transition-delay: 200ms;
+}
+
+section.team .team-member-card:nth-child(3).observed{
+	transition-delay: 600ms;
+}
+
 section.team .team-member-card .text-container{
 	display: flex;
 	flex-direction: column;

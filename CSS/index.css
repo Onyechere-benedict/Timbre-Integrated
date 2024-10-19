@@ -178,6 +178,16 @@ header .subheading{
 .inner.centered header{
 	width: 40%;
 	text-align: center;
+	opacity: 0;
+	filter: blur(5);
+	transform: translateY(100px);
+	transition: all 1.5s;
+}
+
+.inner.centered header.observed{
+	filter: blur(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 
@@ -338,8 +348,8 @@ section.services .col1{
 	flex-direction: column;
 	gap: 30px;
 	opacity: 0;
-	transition: all 1s;
-	transform: translateX(-100px);
+	transition: all 1.5s;
+	transform: translateX(-500px);
 	filter: blur(5px);
 }
 
@@ -381,7 +391,7 @@ section.services .col2 .col{
 	width: calc((100% - 20px) / 2);
 	opacity: 0;
 	transition: all 1.5s;
-	transform: translateY(100px);
+	transform: translateY(500px);
 	filter: blur(5px);
 }
 
@@ -393,6 +403,10 @@ section.services .col2 .col.observed{
 
 section.services .col2 .col:nth-child(1){
 	transition-delay: 400ms;
+}
+
+section.service .col2 .col:nth-child(2) {
+	transition-delay: 600ms;
 }
 
 
@@ -423,17 +437,6 @@ section.services .bottom-img{
 
 
 /* RECRUITMENT PROCESS STYLES ************************ */
-
-section.recruitment-process .inner.centered header {
-	opacity: 0;
-	transform: translateY(100px);
-	transition: all 1s;
-}
-
-section.recruitment-process .inner.centered header.observed{
-		opacity: 1;
-		transform: translateY(0);
-}
 
 section.recruitment-process{
 	padding-bottom: 60px;
