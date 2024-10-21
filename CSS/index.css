@@ -91,6 +91,10 @@ a{
 	text-decoration: none;
 }
 
+.no-scroll{
+	overflow: hidden;
+}
+
 
 /* SPARTAN FONT TEXT */
 
@@ -138,6 +142,7 @@ footer .inner{
 	background-color: #fff;
 	color: var(--accent1);
 	border: 1px solid;
+	cursor: pointer;
 }
 .button-secondary:hover{
 	background-color: var(--accent1);

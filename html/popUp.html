@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/CSS/pop.css" />
+    </head>
+    <body>
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup" id="popup">
+                <span class="close" id="closePopup">&times;</span>
+
+                <div class="popup-content">
+                    <p>Timbre Integrated</p>
+
+                    <p>Sign up to receive exclusive offers:</p>
+
+                    <input type="text" placeholder="Enter your full name" id="emailInput" />
+                    <input type="email" placeholder="Your email" id="emailInput" />
+                    <input type="text" placeholder="Enter Your Interest" id="interest" />
+
+                    <button onclick="submitForm()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <script defer src="/JS/pop.js"></script>
+    </body>
+</html>
