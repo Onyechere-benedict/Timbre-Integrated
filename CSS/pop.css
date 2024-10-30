@@ -61,7 +61,7 @@ font-family: Arial, sans-serif;
 
 }
 
-.popup #emailInput {
+.popup #customerEmail, .popup #customerName, .popup #message {
 
     width: 80%;
 

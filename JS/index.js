@@ -113,7 +113,20 @@ const observeElements = (selectors, threshold = 0, rootMargin = "0px 0px 0px 0px
     });
 };
 
-observeElements([".col1", ".col2 .col", ".inner.centered header", ".process-card", ".call-to-action .inner .text", ".blog-card", ".blog-card-alt", ".team-member-card"], 0, "0px 0px 0px 3000px");
+observeElements(
+    [
+        ".col1",
+        ".col2 .col",
+        ".inner.centered header",
+        ".process-card",
+        ".call-to-action .inner .text",
+        ".blog-card",
+        ".blog-card-alt",
+        ".team-member-card",
+    ],
+    0,
+    "0px 0px 0px 3000px"
+);
 
 const popupToggler = document.querySelector(".toggle-popup");
 const popupDialog = document.querySelector(".popup-overlay");
@@ -126,3 +139,5 @@ const togglePopup = () => {
 
 popupToggler.onclick = togglePopup;
 removePopupDialog.onclick = togglePopup;
+
+const signupButton = document.querySelector(".sign-up-btn");
