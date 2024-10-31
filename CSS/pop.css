@@ -18,8 +18,7 @@
 }
 
 .popup {
-
-font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 
     position: absolute;
 
@@ -40,13 +39,11 @@ font-family: Arial, sans-serif;
 }
 
 .popup-content {
-
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
-
 }
 
 .popup .close {
