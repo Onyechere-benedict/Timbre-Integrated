@@ -912,10 +912,28 @@
                 emailjs.send(serviceID, templateID, params).then(
                     (response) => {
                         console.log("Success", response.state, response.text);
+                        Swal.fire({
+                            icon: "success",
+                            title: "Interests Logged ",
+                            text: "We will contact you shortly",
+                            // confirmButtonText: "",
+                        });
+
+                        setTimeout(() => {
+                            location.reload();
+                        }, 2000);
                     },
-                    (error) => console.log("Error", error)
+                    (error) => {
+                        console.log("Error", error);
+                        Swal.fire({
+                            icon: "error",
+                            title: "There was an error in logging your interests",
+                            text: error,
+                        });
+                    }
                 );
             }
         </script>
+        <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>
