@@ -13,7 +13,7 @@ $(function () {
             }
 
             if (document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400) {
-                $("nav .logo img").attr("src", "/images/logo-removebg-preview.png");
+                $("nav .logo img").attr("src", "/images/logo2.jpeg");
                 $("nav").addClass("sticky");
             }
             else {
