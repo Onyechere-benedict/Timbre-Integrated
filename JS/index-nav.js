@@ -13,11 +13,11 @@ $(function () {
             }
 
             if (document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400) {
-                $("nav .logo img").attr("src", "images/logo_black.png");
+                $("nav .logo img").attr("src", "/images/logo-removebg-preview.png");
                 $("nav").addClass("sticky");
             }
             else {
-                $("nav .logo img").attr("src", "images/logo_white.png");
+                $("nav .logo img").attr("src", "/images/logo-removebg-preview.png");
                 $("nav").removeClass("sticky");
             }
         }
