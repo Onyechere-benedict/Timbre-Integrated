@@ -137,8 +137,11 @@ const loader = document.querySelector(".loader");
 
 const preloaderContainer = document.querySelector("#preloader");
 
+const bodyContainer = document.querySelector(".body-container");
+
 window.addEventListener("load", () => {
 	setTimeout(() => {
+		bodyContainer.classList.add("active");
 		preloaderContainer.style.display = "none";
 	}, 4000);
 });

@@ -83,14 +83,14 @@ body{
 	color: #222;
 }
 #preloader{
-	background: #000;
+	/* background: #222222; */
 	height: 100vh;
 	width: 100vw;
 	position: fixed;
 	z-index: 100;
 	display: grid;
 	place-items: center;
-	opacity: 1;
+	filter: blur(10)
 }
 
 
@@ -127,6 +127,15 @@ inset: 6px;
 	50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
 	75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
 	100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+.body-container{
+	filter: blur(10px);
+	transition: all 1s ease;
+}
+
+.body-container.active{
+	filter: blur(0);
+	transition: all 1s ease;
 }
 ul{
 	list-style: none;
