@@ -89,12 +89,12 @@
 								<a href="#recruitment-process-container" class="menu-link">Services</a>
 								<span class="toggle-menu fa-solid fa-angle-down"></span>
 							</li>
-
+							<!-- 
 							<li class="search-button">
 								<span>
 									<i class="fa-solid fa-search"></i>
 								</span>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</nav>
@@ -516,7 +516,7 @@
 				</footer>
 			</main>
 
-			<section class="search-bar container">
+			<!-- <section class="search-bar container">
 				<div class="inner">
 					<span class="close-btn">
 						<span class="icon">&times;</span>
@@ -531,7 +531,7 @@
 						</div>
 					</form>
 				</div>
-			</section>
+			</section> -->
 		</div>
 
 		<script
@@ -563,11 +563,13 @@
                         Interested Customer Email: ${senderEmail}\n
                         Customer Interest: ${senderInterest}\n
                     `,
+					senderEmail: senderEmail,
+					senderName: senderName,
 				};
 
-				var serviceID = "service_xc3qsjv";
+				var serviceID = "service_75ahkan";
 
-				var templateID = "template_yzngzdk";
+				var templateID = "template_b8qlvcd";
 
 				emailjs.send(serviceID, templateID, params).then(
 					(response) => {
