@@ -77,23 +77,6 @@ $(function () {
 	}
 });
 
-// const observeServiceElements = document.querySelectorAll(".col1");
-
-// const observer = new IntersectionObserver(
-//     (entries) => {
-//         entries.forEach((entry) => {
-//             if (entry.isIntersecting) {
-//                 entry.target.classList.add("hide");
-//                 console.log("intersecting");
-//             } else {
-//                 entry.target.classList.remove("hide");
-//             }
-//         });
-//     },
-//     {
-//         threshold: 0.2,
-//     }
-// );
 
 // observeServiceElements.forEach((el) => observer.observe(el));
 
